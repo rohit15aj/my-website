@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../image/iit.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black; /* GLOBAL TEXT BLACK */
+}
+
+/* HEADER */
+header {
+    background: rgba(255,255,255,0.85);
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(255,255,255,0.9);
+}
+
+nav a {
+    color: black;
+    padding: 15px 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+/* MAIN CONTENT */
+.container {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 52px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 25px;
+}
+
+/* TEXT BOX */
+.main-text {
+    font-size: 20px;
+    line-height: 1.7;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    padding: 28px;
+    border-radius: 14px;
+    border-left: 5px solid #000;
+}
+
+/* SEARCH */
+.search-box {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    padding: 16px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 35px;
+    background: rgba(255,255,255,0.85);
+    color: black;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(255,255,255,0.9);
+    color: black;
+    text-align: center;
+    padding: 18px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .welcome {
+        font-size: 36px;
+    }
+    .main-text {
+        font-size: 17px;
+    }
+}
